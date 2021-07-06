@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>My Billing</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/icons-bootstrap.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </div>
+    </nav>
+    <div class=" bg-dark sidebar">
+        <hr class="bg-white">
+        <div class="batn p-2">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-receipt-cutoff"></i>
+                    Sale
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#" onclick="ninv()">New Invoice</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="ainv()">All Invoice</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="nqut()">New Quotation</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="aqut()">All Quotation</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="batn">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bag-fill"></i>
+                    Purchase
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#" onclick="npur()">New Purchase</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="apur()">All Purchase</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="batn">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-cash-stack"></i>
+                    Expense
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#" onclick="nexp()">New Expense</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="aexp()">All Expense</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="batn">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-people-fill"></i>
+                    Client
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">New Client</a></li>
+                    <li><a class="dropdown-item" href="#">All Client</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="batn">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-book"></i>
+                    Report
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Cash Book</a></li>
+                    <li><a class="dropdown-item" href="#">Payment Received</a></li>
+                    <li><a class="dropdown-item" href="#">Daliy Summary</a></li>
+                    <li><a class="dropdown-item" href="#">Profit & Loss</a></li>
+                    <li><a class="dropdown-item" href="#">Stock Low Report</a></li>
+                    <li><a class="dropdown-item" href="#">Stock Availability</a></li>
+                    <li><a class="dropdown-item" href="#">Amount Due</a></li>
+                    <li><a class="dropdown-item" href="#">Payment Histoty</a></li>
+                    <li><a class="dropdown-item" href="#">Purchases Report</a></li>
+                    <li><a class="dropdown-item" href="#">Expenses Report</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="batn">
+            <div class="dropdown">
+                <a class="text-decoration-none text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-pencil-square"></i>
+                    Master
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start dwm"
+                    aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">New Expense</a></li>
+                    <li><a class="dropdown-item" href="#">All Expense</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!------------------------- Sidebar ------------------------>
+    <div class="container-fluid fw-bold con" id="hcon">
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/conte.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+.sidebar{
+    position: absolute;
+    width: 154px;
+    height: 100vh;
+}
+.sidebar i{
+    color: white;
+}
+.batn:hover{
+    background-color:rgb(38, 117, 236);
+}
+.batn{
+    padding: .5rem;
+    margin: 0;
+}
+.con{
+    /* background-color: rgb(25, 221, 255); */
+    margin-left: 9.6rem;
+    width: 84.7%;
+    position: absolute;
+    height: 100%;
+    border: black solid 2px;
+}
+.invf{
+    border: gray solid 1px;
+    padding: 1rem;
+}
