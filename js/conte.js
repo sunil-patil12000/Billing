@@ -639,3 +639,113 @@ function aexp(){
 
     </div>`
 }
+function nclin(){
+    con.innerHTML=`<h3>Client</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mt-3 row">
+                    <label for="ClientName" class="col-sm-2 col-form-label ">Client Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control w-50" id="inputPassword" placeholder="Client Name">
+                    </div>
+                </div>
+                <div class="mt-3 row">
+                    <label for="Phone No." class="col-sm-2 col-form-label ">Phone No:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control w-50" id="inputPassword" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="mt-3 row">
+                    <label for="address" class="col-sm-2 col-form-label ">Address:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control w-75 " id="inputPassword" placeholder="Address">
+                    </div>
+                </div>
+                <div class="mt-3 row">
+                    <label for="email" class="col-sm-2 col-form-label ">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control w-75 " id="inputPassword" placeholder="Email Id">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-1">
+                <div class="position-absolute bg-dark hv"></div>
+            </div>
+            <div class="col-lg-5">
+                <h5 class="mt-3">Accont Type</h5>
+                <div class="form-che">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Debit
+                    </label>
+
+
+                    <input class="form-check-input ms-3" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Credit
+                    </label>
+                </div>
+                <div class="input-group mt-3">
+                    <span class="input-group-text bg-primary" id="basic-addon1">Rs.</span>
+                    <input type="text" class="form-control ml-3" placeholder="Open Balance" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-outline-primary">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>`
+}
+function aclin() {
+    con.innerHTML=` <h3>All Client</h3>
+    <div class="container-fluid invf">
+        <div class="row">
+            <div class="col-lg-12">
+                <label for="exampleFormControlInput1" class="form-label">Search</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter client Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid invf mt-2">
+        <table class="table">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Contact No.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <a href="#"><th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td></a>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>`
+}
